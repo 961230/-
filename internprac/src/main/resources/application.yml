@@ -1,0 +1,21 @@
+devtools:
+  livereload:
+    enabled: true
+
+spring:
+  output.ansi.enabled: always
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://localhost:3306/interndb?autoReconnect=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 1234
+
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+
